@@ -6,4 +6,109 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  box-sizing: border-box;
+}
+
+/* STYLES 🎨 */
+
+/* App */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+/* Card */
+.card {
+  width: 30rem;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 150px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* Button */
+.button {
+  border: none;
+  border-radius: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation: float 0.8s ease-in-out infinite;
+}
+
+.button--🎲 {
+  background-color: rgb(255, 172, 172);
+}
+
+.button--⭐️ {
+  background-color: rgb(152, 219, 255);
+}
+
+.button:focus {
+  outline: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* List */
+.list {
+  width: 30rem;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.list-item {
+  justify-self: stretch;
+  overflow: hidden;
+}
+
+.list-item img {
+  object-fit: cover;
 }
